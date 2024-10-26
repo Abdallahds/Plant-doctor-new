@@ -1,0 +1,29 @@
+$color1: #72BF78;
+
+@mixin formInput{
+    margin-top: 10px;
+        margin-right: 30px;
+        input{
+            width: 250px;
+            height: 40px;
+            border-radius: 20px;
+            border: #000 solid;
+            background-color: #fff;
+            padding-left: 5px;
+        }
+        button{
+            width: 100px;
+            height: 40px;
+            border: #000 solid;
+            border-radius: 20px;
+            background-color: $color1;
+            color: #fff;
+            cursor: pointer;
+            &:hover{
+                background-color: #fff;
+                
+                color: $color1;
+                transition: all 0.3s;
+            }
+        }
+}

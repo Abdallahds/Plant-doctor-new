@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Plant doctor</title>
+</head>
+<body>
+    <!-- <nav class="mainNav">
+        <h2> <%= time  %></h2>
+        <img src="2.jpeg" alt="" >
+        <form action="login" method="post">
+            <input type="text" name="userName" placeholder="User Name">
+            <input type="password" name="Password" placeholder="Password">
+            <button type="submit">تسجيل الدخول</button>
+        </form>
+    </nav>
+    <nav class="links">
+        <a href="#">المتجر الالكتروني</a>
+        <a href="#">الدورات و المحاضرات</a>
+        <a href="#">الادارة المالية المتكاملة</a>
+        <a href="#">المنح و القروض</a>
+        <a href="#">الحاسبة الزراعية</a>
+        <ul class="mainMenu">
+            <li>
+            <a href="#">^ الاسمدة</a>
+            <ul class="subMenu">
+                <li><a href="#">انواع الاسمدة</a></li>
+                <li><a href="#">استخدامات الاسمدة</a></li>
+            </ul>
+            </li>
+        </ul>
+        <ul class="mainMenu">
+            <li><a href="#">^ الأمراض</a></li>
+            <ul class="subMenu">
+                <li> <a href="#">الامراض الفطرية</a></li>
+                <li> <a href="#">الامراض الحشرية</a></li>
+                <li> <a href="#">الامراض التربية</a></li>
+                <li><a href="#">مقالات تعريفية بالامراض </a></li>
+            </ul>
+        </ul>
+        <a href="#">الخرائط الجوية</a>
+        <a href="#">الرئيسية</a>
+    </nav>
+
+    <div class="main">
+        <form action="search" method="post">
+            <input type="text" placeholder=".........ابحث في الموقع">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+   -->
+
+    <header>
+        <div class="topLeft" id="leftList">
+            left
+           </div>
+        
+           <div class="topRight" id="rightList">
+            <h1 id="closeListBtn">close</h1>
+                <a href="#">الرئيسية</a>
+                <a href="#">المتجر الالكتروني</a>
+                <a href="#">الدورات و المحاضرات</a>
+                <a href="#">الادارة المالية المتكاملة</a>
+                <a href="#">المنح و القروض</a>
+                <a href="#">الحاسبة الزراعية</a>
+                <a href="#">الاسمدة</a>
+                <a href="#">الأمراض</a></li>
+                <a href="#">الخرائط الجوية</a>
+           </div>
+        
+
+
+        <nav>
+            <img src="2.jpeg" alt="">
+            <h1><%= time %></h1>
+            <h1 class="list" id="openListBtn">list</h1>
+        </nav>
+
+        <form action="/search" method="post">
+            <input type="text" name="searchTopic" id="" placeholder="..........ابحث في الموقع">
+        </form>
+    </header>
+
+    <div class="cards">
+        <div class="card">
+            تنسيق حدائق
+        </div>
+        <div class="card">
+            Events
+        </div>
+        <div class="card">
+            محاضرات و دورات
+        </div>
+        <div class="card">
+            تنسيق حدائق
+        </div>
+    </div>
+    <footer>
+        <h1>Contact Us...</h1>
+    </footer>
+
+</body>
+
+<script>
+   
+   function closeList(){
+    document.getElementById("rightList").style.left = "100%";
+    document.getElementById("leftList").style.left = "-50%";
+   }
+   document.getElementById("closeListBtn").addEventListener('click',closeList)
+
+   function openList(){
+    document.getElementById("rightList").style.left = "50%";
+    document.getElementById("leftList").style.left = "0%";
+   }
+   document.getElementById("openListBtn").addEventListener('click',openList)
+
+</script>
+</html>
